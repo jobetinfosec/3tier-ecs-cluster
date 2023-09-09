@@ -1,6 +1,6 @@
 # configure aws provider to establish a secure connection between terraform and aws
 provider "aws" {
-  region  = var.region
+  region                   = var.region
   shared_config_files      = ["$HOME/.aws/config"]
   shared_credentials_files = ["$HOME/.aws/credentials"]
   profile                  = "paris"
